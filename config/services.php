@@ -11,8 +11,11 @@ use App\FrameworkPasAPas\Session\Storage\NativeSessionStorage;
 use App\FrameworkPasAPas\Session\Storage\SessionStorageInterface;
 
 return [
+    'template.directory' => static function(Container $container) {
+    return dirname(__DIR__).'/templates';
+    },
     MainController::class => static function (Container $container) {
-        return new MainController();
+        return new MainController($container->get(PHPRenderer::class));
     },
     RouterMiddleware::class => static function (Container $container) {
         return new RouterMiddleware($container->get(Router::class));

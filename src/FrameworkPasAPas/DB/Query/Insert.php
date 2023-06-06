@@ -9,7 +9,7 @@ final class Insert
     /**
      * @var array<string>
      */
-    private $values = [];
+    private array $values = [];
 
     public function __construct(string $table)
     {

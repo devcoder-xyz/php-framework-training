@@ -3,5 +3,5 @@
 use App\FrameworkPasAPas\Router\Route;
 
 return [
-    new Route('main', '', [\App\Controller\MainController::class])
+    new Route('app_index', '', [\App\Controller\MainController::class])
 ];

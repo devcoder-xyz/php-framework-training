@@ -15,7 +15,7 @@ final class Router
     private array $routes = [];
 
     /**
-     * @var array<Route>
+     * @param  $routes array<Route>
      */
     public function __construct(array $routes)
     {

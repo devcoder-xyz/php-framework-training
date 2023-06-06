@@ -13,8 +13,7 @@ final class Flash
 {
     private const DEFAULT_FLASH_KEY = '__flash';
 
-
-    private iterable $storage;
+    private $storage;
     private string $key;
 
     public function __construct(&$storage, string $key = self::DEFAULT_FLASH_KEY)

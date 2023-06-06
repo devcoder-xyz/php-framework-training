@@ -37,6 +37,11 @@ final class Request
         return $this->server['REQUEST_METHOD'];
     }
 
+    public function isMethodPost(): bool
+    {
+        return $this->getMethod() === 'POST';
+    }
+
     public function getQuery(): array
     {
         return $this->query;

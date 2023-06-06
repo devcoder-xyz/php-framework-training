@@ -27,7 +27,7 @@ final class Select
     /**
      * @var int|null
      */
-    private ?int $limit;
+    private ?int $limit = null;
 
     private bool $distinct = false;
 
@@ -36,7 +36,7 @@ final class Select
      */
     private array $join = [];
 
-    public function __construct(array $select)
+    public function __construct(array $select = [])
     {
         $this->fields = $select;
     }
