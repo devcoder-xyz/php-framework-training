@@ -18,9 +18,6 @@ final class MainController extends AbstractController
 
     public function __invoke(): Response
     {
-        if (!isset($_SESSION['user'])) {
-            return new Response('', 403);
-        }
         $content = $this->PHPRenderer->render('main.php');
         return new Response($content);
     }

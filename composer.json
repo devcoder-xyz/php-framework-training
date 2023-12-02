@@ -1,6 +1,6 @@
 {
   "name": "devcoder-xyz/php-framework-training",
-  "description": "Framework PHP à partir de zéro : ce projet open source fournit les composants de base pour créer un framework PHP personnalisé.",
+  "description": "PHP MVC Training Framework: Dive into the fundamentals of modern PHP frameworks like Laravel or Symfony with this streamlined educational project.",
   "type": "library",
   "license": "AGPL-3.0",
   "authors": [
