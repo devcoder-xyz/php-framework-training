@@ -6,7 +6,6 @@ use App\FrameworkPasAPas\DependencyInjection\Container;
 use App\FrameworkPasAPas\Http\MiddlewareInterface;
 use App\FrameworkPasAPas\Http\Request;
 use App\FrameworkPasAPas\Http\Response;
-use App\FrameworkPasAPas\Kernel;
 use BadMethodCallException;
 use LogicException;
 

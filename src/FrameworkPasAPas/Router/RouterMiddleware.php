@@ -24,7 +24,7 @@ final class RouterMiddleware implements MiddlewareInterface
             $route = $this->router->match($request);
             $routeHandler = $route->getHandler();
             $attributes = [
-                ControllerMiddleware::CONTROLLER => $routeHandler[0],
+                ControllerMiddleware::CONTROLLER => $routeHandler[0] ?? $routeHandler,
                 ControllerMiddleware::ACTION => $routeHandler[1] ?? null,
                 ControllerMiddleware::NAME => $route->getName(),
             ];
